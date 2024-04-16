@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yuanjj-99.github.io</id>
     <title>袁师傅的备忘录</title>
-    <updated>2024-04-16T01:56:47.663Z</updated>
+    <updated>2024-04-16T02:29:56.760Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yuanjj-99.github.io"/>
     <link rel="self" href="https://yuanjj-99.github.io/atom.xml"/>
@@ -10,6 +10,25 @@
     <logo>https://yuanjj-99.github.io/images/avatar.png</logo>
     <icon>https://yuanjj-99.github.io/favicon.ico</icon>
     <rights>All rights reserved 2024, 袁师傅的备忘录</rights>
+    <entry>
+        <title type="html"><![CDATA[关于form-data处理]]></title>
+        <id>https://yuanjj-99.github.io/post/guan-yu-form-data-chu-li/</id>
+        <link href="https://yuanjj-99.github.io/post/guan-yu-form-data-chu-li/">
+        </link>
+        <updated>2024-04-16T02:26:52.000Z</updated>
+        <content type="html"><![CDATA[<p>url = 'xxxxxxxxx'<br>
+headers = {<br>
+'Authorization': 'Bearer token',<br>
+'Content-Type': 'form-data'<br>
+}</p>
+<p>files = {&quot;name&quot;: (None, &quot;one040701&quot;), &quot;parent_id&quot;: (None, &quot;17751236&quot;),<br>
+'owner_id': (None, &quot;1775&quot;), 'owner_info': (None, &quot;yuanjj@163.com&quot;),<br>
+'img': ('123.jpg', open(r'C:\123.jpg', 'rb'), 'image/png')<br>
+}<br>
+response = requests.post(url, headers=headers, files=files)<br>
+print(response.text)</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://yuanjj-99.github.io/post/hello-gridea/</id>
